@@ -2,7 +2,7 @@
 <diezelImplementation xmlns="http://diezel.ericaro.net/2.0.0/">
 	<package>org.apache.s4.core.edsl</package>
 	<name>Builder</name>
-	<implements>org.apache.s4.core.edsl.S4App</implements>
+	<implements>org.apache.s4.core.edsl.S4DSL</implements>
 	<transitions>
 		<transitionImplementation name="pe">
 			<body>
@@ -74,9 +74,10 @@
 				System.out.println("info");
 			</body>
 		</transitionImplementation>
-		<transitionImplementation name="create">
+		<transitionImplementation name="build">
 			<body>
-				System.out.println("create");
+				System.out.println("build");
+				return "XXX";
 			</body>
 		</transitionImplementation>
 

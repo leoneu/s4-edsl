@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diezel xmlns="http://diezel.ericaro.net/2.0.0/">
 	<package>org.apache.s4.core.edsl</package>
-	<name>S4App</name>
-	<expression>(pe , type , (fireOn , ifInterval? )? , (timer, withPeriod)? , (cache, size , expires? )? , asSingleton? , (emitEvent, onField?, onKey?, to )+  )+ , info?, create</expression>
+	<name>S4DSL</name>
+	<expression>(pe , type , (fireOn , ifInterval? )? , (timer, withPeriod)? , (cache, size , expires? )? , asSingleton? , (emitEvent, onField?, onKey?, to )+  )+ , info?, build</expression>
 	<transitions>
 		<transition name="pe">
 			<signature>pe()</signature>
@@ -47,11 +47,11 @@
 			<signature>to()</signature>
 		</transition>
 		<transition name="info">
-			<signature>andInfo()</signature>
+			<signature>info()</signature>
 		</transition>
-		<transition name="create">
-			<!--  return>java.lang.String</return-->
-			<signature>create()</signature>
+		<transition name="build">
+			<return>java.lang.String</return>
+			<signature>build()</signature>
 		</transition>
 	</transitions>
 </diezel>

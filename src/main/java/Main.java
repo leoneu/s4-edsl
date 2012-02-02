@@ -1,15 +1,17 @@
+import org.apache.s4.core.edsl.BuilderS4DSL;
 
 public class Main {
-    // public static BuilderCarDsl build() {
-    // return new BuilderCarDsl();
-    // }
-    //
-    // public static void main(String[] args) {
-    //
-    // Car c = new BuilderCarDsl().thermal().withTank(12).color(Color.BLACK);
-    // System.out.println(c);
-    // c = new BuilderCarDsl().electrical().withBattery(50).color(Color.BLUE);
-    // System.out.println(c);
-    //
-    // }
+    public static BuilderS4DSL build() {
+        return new BuilderS4DSL();
+    }
+
+    public static void main(String[] args) {
+
+        // String dummy new
+        // BuilderS4DSL().pe().type().fireOn().ifInterval().cache().size().asSingleton().emitEvent().onField().to().pe().type().
+        // System.out.println(c);
+        // c = new BuilderCarDsl().electrical().withBattery(50).color(Color.BLUE);
+        // System.out.println(c);
+
+    }
 }
