@@ -2,7 +2,6 @@
 <diezelImplementation xmlns="http://diezel.ericaro.net/2.0.0/">
 	<package>org.apache.s4.core.edsl</package>
 	<name>Builder</name>
-	<extends>AbstractCarBuilder</extends>
 	<implements>org.apache.s4.core.edsl.S4App</implements>
 	<transitions>
 		<transitionImplementation name="pe">

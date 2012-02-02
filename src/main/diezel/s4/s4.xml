@@ -50,7 +50,7 @@
 			<signature>andInfo()</signature>
 		</transition>
 		<transition name="create">
-			<return>java.lang.String</return>
+			<!--  return>java.lang.String</return-->
 			<signature>create()</signature>
 		</transition>
 	</transitions>
