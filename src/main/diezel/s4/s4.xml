@@ -2,7 +2,7 @@
 <diezel xmlns="http://diezel.ericaro.net/2.0.0/">
 	<package>org.apache.s4.core.edsl</package>
 	<name>S4App</name>
-	<expression>( (pe , type , (fireOn , ifInterval? )? , (timer, withPeriod)? , (cache, size , expires? )? , asSingleton? , (emitEvent, onField?, onKey?, to )+ , info? )+)+ , create</expression>
+	<expression>(pe , type , (fireOn , ifInterval? )? , (timer, withPeriod)? , (cache, size , expires? )? , asSingleton? , (emitEvent, onField?, onKey?, to )+  )+ , info?, create</expression>
 	<transitions>
 		<transition name="pe">
 			<signature>pe()</signature>
