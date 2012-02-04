@@ -7,11 +7,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // String dummy new
-        // BuilderS4DSL().pe().type().fireOn().ifInterval().cache().size().asSingleton().emitEvent().onField().to().pe().type().
-        // System.out.println(c);
-        // c = new BuilderCarDsl().electrical().withBattery(50).color(Color.BLUE);
-        // System.out.println(c);
+        String app = new BuilderS4DSL().pe().type().fireOn().ifInterval().cache().size().asSingleton().emitEvent()
+                .onField().to().build();
+        System.out.println(app);
 
     }
 }

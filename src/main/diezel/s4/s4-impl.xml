@@ -77,7 +77,7 @@
 		<transitionImplementation name="build">
 			<body>
 				System.out.println("build");
-				return "XXX";
+				return "Done!";
 			</body>
 		</transitionImplementation>
 
