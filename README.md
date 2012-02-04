@@ -4,8 +4,14 @@ Use [Diezel](http://code.google.com/p/diezel/) to generate a fluent API for teh 
 
 Thank you to the Diezel author, Eric Atienza, for making this tool available and for helping us get started!
 
-To generate sources run:
+To generate sources only run:
 
 <pre>
 gradle generateSources
+</pre>
+
+and to compile the project which uses the generated sources:
+
+<pre>
+gradle build
 </pre>
